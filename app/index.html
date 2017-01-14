@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="angular-popover.css">
+	<link rel="stylesheet" href="app.css">
+	<title>Angular Popover</title>
+</head>
+<body data-ng-app="app">
+	<h1 class="title">Hello world!</h1>
+	<span id="popover-trigger" class="ng-popover-trigger">Open Popover</span>
+	<angular-popover
+			trigger="popover-trigger"
+		direction="left"
+		popover-class="custom-popover"
+		on-open="openCallback()"
+		on-close="closeCallback()">
+	<!--- Your custom HTML goes here  --->
+		Happy coding!
+	</angular-popover>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" type="text/javascript"></script>
+	<script src="angular-popover.js" type="text/javascript"></script>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
